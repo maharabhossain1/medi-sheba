@@ -7,6 +7,7 @@ import {
   sendEmailVerification,
   sendPasswordResetEmail,
   updateProfile,
+  signOut,
 } from "firebase/auth";
 import { useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
@@ -69,6 +70,12 @@ const useFirebase = () => {
     sendPasswordResetEmail(auth, email).then((result) => {});
   };
 
+  const logOut = () => {
+    signOut(auth).then(() => {
+      setUser({});
+    });
+  };
+
   return {
     setIsLogin,
     setName,
@@ -84,6 +91,7 @@ const useFirebase = () => {
     error,
     handleGoogleSignIn,
     user,
+    logOut,
   };
 };
 export default useFirebase;
