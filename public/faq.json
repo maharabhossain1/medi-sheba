@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "quiz": "HOW DOES THE SITE WORK?",
+    "ans": "You can browse the site or use our search engine to find your desired products. You can then add them to your shopping bag and click on place order. You let us know your address, select a delivery time – and voila, you are done. A BanglaMeds representative will then deliver your order right to your home or office."
+  },
+  {
+    "id": 2,
+    "quiz": "HOW MUCH DO DELIVERIES COST?",
+    "ans": "All of our deliveries are completely free of charge for a limited time period until further notice."
+  },
+  {
+    "id": 3,
+    "quiz": "HOW CAN I CONTACT YOU?",
+    "ans": "Visite our Contect Form of social media"
+  },
+  {
+    "id": 4,
+    "quiz": "HOW LONG DO THE DELIVERIES TAKE?",
+    "ans": " We are serving within 1-3 Hour Delivery , to Uttara, Tongi, Mirpur, Cantonment, Banani, Banani DOHS, Gulshan, Baridhara, Baridhara DOHS, Badda, Mohakhali, Mohakhali DOHS, Khilgaon, Paltan, Motijheel, Banasree, Moghbazar, Malibag, Razarbag, Kallyanpur, Shyamoli, Paikpara, Pallabi and Mohammedpur. For the rest of the Dhaka city we are currently delivering within 4-7 hours timeframe. You can also specify a convenient time and we will send the products during that time."
+  },
+  {
+    "id": 5,
+    "quiz": "WHAT ARE YOUR DELIVERY HOURS?",
+    "ans": "We deliver from 8 am to 10 pm every day. You can choose from available slots to find something that is convenient to you."
+  },
+  {
+    "id": 6,
+    "quiz": "HOW DO I KNOW WHEN MY ORDER IS HERE?",
+    "ans": "A BanglaMeds representative will call you as soon as they are at your house to let you know about your delivery."
+  },
+  {
+    "id": 7,
+    "quiz": "HOW DO I PAY?",
+    "ans": "A. We accept cash on delivery and we also have Online Credit Card and Online Bkash service. Don’t worry, our BanglaMeds representatives should always carry enough change."
+  },
+  {
+    "id": 8,
+    "quiz": "DO YOU SERVE MY AREA?",
+    "ans": "We are currently serving all of Dhaka city, except certain parts of Old town."
+  },
+  {
+    "id": 9,
+    "quiz": "HOW DO I REFER A FNF?",
+    "ans": "To refer a friend or family go to https://BanglaMeds.com.bd/referral and submit their mobile number or email address. Your refered person will recieve a SMS or an email from us with a 50tk discount (for the orders over 500tk). Once they complete their first order with us you will recieve a 50tk credit in your account."
+  },
+  {
+    "id": 10,
+    "quiz": "I CAN’T FIND THE PRODUCT I AM LOOKING FOR. WHAT DO I DO?",
+    "ans": "We are always open to new suggestions and will add an item to our inventory just for you. There is a 'Product Request' feature that you can use to inform us your requirement. You can also +88-09638-120-130 or mail us at support@BanglaMeds.com.bd to add an item to our inventory."
+  },
+  {
+    "id": 11,
+    "quiz": "MY ORDER IS WRONG. WHAT DO I DO?",
+    "ans": "A. Immediately call +88-09638-120-130 and let us know the problem."
+  },
+  {
+    "id": 16,
+    "quiz": "WHAT IF THE ITEM IS OUT OF STOCK?",
+    "ans": "We hold our own inventory, so we rarely run of out stock. However, we will try our best to source what you need. If we cannot find it, we will call you and let you know what substitutes are available."
+  },
+  {
+    "id": 12,
+    "quiz": "WHAT HAPPENS DURING A HARTAL?",
+    "ans": "We work during hartals. That’s how dedicated we are."
+  },
+  {
+    "id": 13,
+    "quiz": "WHY SHOULD WE BUY FROM YOU WHEN I HAVE A PHARMACY NEARBY?",
+    "ans": "Well, that is up to you but you can also be a couch potato like our founders and have your items delivered to your house for free. Our prices are sometimes lower than that of major superstores in the city. We also carry a larger variety than the average corner-store. So, there is really no reason to not buy from us."
+  },
+  {
+    "id": 14,
+    "quiz": "WHAT ABOUT THE PRICES?",
+    "ans": "Our prices are strictly as of MRP! We will never overcharge, however If you feel that any product is priced unfairly, please let us know."
+  },
+  {
+    "id": 15,
+    "quiz": "WHAT IS YOUR POLICY ON REFUNDS?",
+    "ans": "We take refund during the time of delivery only. We reserve the right to refuse refund. Please contact us at +88-09638-120-130 if you want to return an item."
+  }
+]

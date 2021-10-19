@@ -9,7 +9,7 @@ export default function Footer() {
       <Container>
         <Row xs={1} md={4} lg={6} className="justify-content-evenly">
           <Col>
-            <ul class="text-light">
+            <ul className="text-light">
               <h4>Policy Info</h4>
               <li>Editorial Policy</li>
               <li>Privacy Policy</li>
@@ -20,7 +20,7 @@ export default function Footer() {
             </ul>
           </Col>
           <Col>
-            <ul class="text-light">
+            <ul className="text-light">
               <h4>Useful Links</h4>
               <li>FAQ</li>
               <li>About us</li>
@@ -35,10 +35,10 @@ export default function Footer() {
               <h4>Social Medial </h4>
               <li>Get in touched by Social media</li>
               <li>
-                <FaFacebook class="fs-1 m-1" />
-                <FaGithub class="fs-1 m-1" />
-                <FaInstagram class="fs-1 m-1" />
-                <FaTwitter class="fs-1 m-1" />
+                <FaFacebook className="fs-1 m-1" />
+                <FaGithub className="fs-1 m-1" />
+                <FaInstagram className="fs-1 m-1" />
+                <FaTwitter className="fs-1 m-1" />
               </li>
             </ul>
           </Col>

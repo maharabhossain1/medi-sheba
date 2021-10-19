@@ -1,9 +1,10 @@
 import React from "react";
+import TopBanner from "./TopBanner/TopBanner";
 
 export default function Home() {
   return (
     <div>
-      <h1>this is home</h1>
+      <TopBanner />
     </div>
   );
 }
