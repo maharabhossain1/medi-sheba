@@ -54,11 +54,11 @@ export default function Login() {
     }
   };
   return (
-    <div className="w-75 m-auto">
+    <div className="w-75 m-auto my-5">
       <Form onSubmit={handleRegistration}>
-        <h3 className="text-primary">
-          Wlcome to {isLogin ? "Login" : "Registration"}
-        </h3>
+        <div className="home-text my-3">
+          <h3>Wlcome to {isLogin ? "Login" : "Registration"}</h3>
+        </div>
         {!isLogin && (
           <FloatingLabel
             controlId="floatingInput"
@@ -95,35 +95,18 @@ export default function Login() {
         </Form.Group>
 
         <div className="row mb-3 text-danger">{error}</div>
-        <Button type="submit">{isLogin ? "Login" : "Register"}</Button>
+        <Button className="btn-custom-color" type="submit">
+          {isLogin ? "Login" : "Register"}
+        </Button>
         {isLogin && (
           <p className="mt-2" onClick={handleResetPassword}>
             <u> Forget your password?</u>
           </p>
         )}
       </Form>
-      <Button className="my-3" onClick={handleGoogleSignIn}>
+      <Button className="my-3 btn-custom-color" onClick={handleGoogleSignIn}>
         Google Sign In
       </Button>
     </div>
   );
 }
-
-// <FloatingLabel
-//   controlId="floatingInput"
-//   label="Email address"
-//   className="mb-3"
-// >
-//   <Form.Control type="email" placeholder="name@example.com" />
-// </FloatingLabel>
-// <FloatingLabel controlId="floatingPassword" label="Password">
-//   <Form.Control type="password" placeholder="Password" />
-// </FloatingLabel>
-// <div className="mt-3">
-//   <Button>Login</Button>
-//   <p>or</p>
-//   <Button onClick={handleClickGoogle}>Login with Google</Button>
-
-// onBlur={handleNameChange}
-
-//  onBlur = { handleEmailChange };
