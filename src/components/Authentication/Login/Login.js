@@ -1,8 +1,7 @@
 import React from "react";
 import { FloatingLabel, Form, Button } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hook/useAuth";
-
-// import useFirebase from "../../hooks/useFirebase";
 
 export default function Login() {
   const {
@@ -20,6 +19,10 @@ export default function Login() {
     error,
     handleGoogleSignIn,
   } = useAuth();
+  // const location = useLocation();
+  // const history = useHistory();
+  // const redirect_url = location.state?.from || "/home";
+
   const toggleLogin = (e) => {
     setIsLogin(e.target.checked);
   };
@@ -52,6 +55,12 @@ export default function Login() {
     } else {
       registerNewUser(email, password);
     }
+
+    // const signInWithGoogle = () => {
+    //   handleGoogleSignIn().then((result) => {
+    //     history.push(redirect_url);
+    //   });
+    // };
   };
   return (
     <div className="w-75 m-auto my-5">

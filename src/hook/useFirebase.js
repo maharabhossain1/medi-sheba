@@ -108,7 +108,7 @@ const useFirebase = () => {
     handleGoogleSignIn,
     user,
     logOut,
-    isLoading
+    isLoading,
   };
 };
 export default useFirebase;
