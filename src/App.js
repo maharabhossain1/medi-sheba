@@ -1,10 +1,11 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import About from "./components/AboutUs/About";
 import Login from "./components/Authentication/Login/Login";
+import PrivateRoute from "./components/Authentication/PrivateRoute/PrivateRoute";
 import Faq from "./components/Faq/Faq";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import HealthStore from "./components/HealthStore/HealthStore";
+
 import Home from "./components/Home/Home";
 import NotFound from "./components/Notfound/NotFound";
 import Servicing from "./components/Servicing/Servicing/Servicing";
@@ -26,21 +27,15 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
-            <Route path="/healthstore">
-              <HealthStore />
-            </Route>
             <Route path="/faq">
               <Faq />
             </Route>
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/servicing/:serviceId">
+            <PrivateRoute path="/servicing/:serviceId">
               <Servicing />
-            </Route>
-            {/* <PrivateRoute path="/booking/:serviceId">
-            <Booking></Booking>
-          </PrivateRoute> */}
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

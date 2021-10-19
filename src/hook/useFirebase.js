@@ -8,8 +8,9 @@ import {
   sendPasswordResetEmail,
   updateProfile,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
@@ -23,13 +24,16 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
 
   const handleGoogleSignIn = () => {
-    signInWithPopup(auth, googleProvider).then((result) => {
-      setUser(result.user);
-    });
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+      })
+      .finally(() => setIsLoading(false));
   };
 
   const processLogin = (email, password) => {
@@ -71,11 +75,23 @@ const useFirebase = () => {
   };
 
   const logOut = () => {
+    setIsLogin(true);
     signOut(auth).then(() => {
-      setUser({});
+      setUser({}).finally(() => setIsLoading(false));
     });
   };
 
+  useEffect(() => {
+    const unsubscribed = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser({});
+      }
+      setIsLoading(false);
+      return () => unsubscribed;
+    });
+  }, []);
   return {
     setIsLogin,
     setName,
@@ -92,6 +108,7 @@ const useFirebase = () => {
     handleGoogleSignIn,
     user,
     logOut,
+    isLoading
   };
 };
 export default useFirebase;

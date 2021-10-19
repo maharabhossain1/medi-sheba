@@ -10,7 +10,7 @@ export default function Services() {
       .then((data) => setSheba(data));
   }, []);
   return (
-    <div className="my-3">
+    <div className="my-3" id="services">
       <Container>
         <Row xs={1} md={2} lg={3} className="justify-content-evenly m-auto">
           {sheba.map((shebaMini) => (

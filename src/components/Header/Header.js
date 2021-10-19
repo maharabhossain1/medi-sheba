@@ -28,9 +28,6 @@ export default function Header() {
             <Nav.Link as={Link} to="/about">
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/healthstore">
-              Health Store
-            </Nav.Link>
             <Nav.Link as={HashLink} to="/home/#services">
               Services
             </Nav.Link>
