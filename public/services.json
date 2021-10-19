@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/vY6SP3R/medicine.jpg",
+    "title": "Medicine Retail",
+    "mini_detail": "You can buy medicine"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/h7y221h/telemedicine-f.jpg",
+    "title": "Telemedicine",
+    "mini_detail": "We give this service too "
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/Lr7YCDR/home-delivery.jpg",
+    "title": "Home Delivery",
+    "mini_detail": "We Also service at home"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/yy1G26Q/hospital.jpg",
+    "title": "Hospital Delivery",
+    "mini_detail": "We deliver medicine at hospital"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/CBQLh89/diagonostic.jpg",
+    "title": "Diagonostic",
+    "mini_detail": "Diagonostic at home"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/Wxt3sGr/Online-Doctor-Consultation-Support-Promotion-Flat-Banner-Modern-Healthcare-Service-Medical-Technolog.jpg",
+    "title": "Doctor Consultation",
+    "mini_detail": "We Also provide this"
+  }
+]

@@ -10,7 +10,7 @@ export default function MidSection() {
         <Row xs={1} md={2} lg={2} className="justify-content-evenly">
           <Col>
             <div className=" m-auto">
-              <img src={img} class="img-fluid" alt="" />
+              <img src={img} className="img-fluid" alt="" />
             </div>
           </Col>
           <Col className="d-flex align-items-center justify-content-center">

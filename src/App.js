@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 import HealthStore from "./components/HealthStore/HealthStore";
 import Home from "./components/Home/Home";
 import NotFound from "./components/Notfound/NotFound";
+import Servicing from "./components/Servicing/Servicing/Servicing";
 import AuthProvider from "./context/AuthProvider";
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/servicing/:serviceId">
+              <Servicing />
             </Route>
             {/* <PrivateRoute path="/booking/:serviceId">
             <Booking></Booking>

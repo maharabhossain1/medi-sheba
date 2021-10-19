@@ -16,7 +16,9 @@ export default function Header() {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand href="#home">Medi Sheba</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/Home">
+          Medi Sheba
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
