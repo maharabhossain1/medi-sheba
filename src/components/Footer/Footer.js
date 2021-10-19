@@ -5,7 +5,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="bg-dark pt-5">
+    <div className="bg-dark pt-5 footer">
       <Container>
         <Row xs={1} md={4} lg={6} className="justify-content-evenly">
           <Col>
@@ -44,7 +44,7 @@ export default function Footer() {
           </Col>
         </Row>
       </Container>
-      <div className="container bg-dark mt-3  d-flex  justify-content-center">
+      <div className="container mt-3  d-flex  justify-content-center">
         <p className="text-xs-center text-light">
           &copy;{new Date().getFullYear()} Medi Sheba -All Rights
         </p>

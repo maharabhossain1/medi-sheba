@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import FaqAccordion from "./FaqAccordion";
 import img from "./img/FAQ.jpeg";
-
+import "./Faq.css";
 export default function Faq() {
   const [faqs, setFaqs] = useState([]);
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Faq() {
   return (
     <div>
       <div className="w-75 m-auto">
-        <div className="py-3 my-3 text-light bg-dark">
+        <div className="py-3 my-3 text-light faq-style">
           <h3 className="text-center">Frequently Asked Questions</h3>
         </div>
         <div>

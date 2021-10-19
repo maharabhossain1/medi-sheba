@@ -3,11 +3,18 @@ import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useAuth from "../../hook/useAuth";
+import "./Header.css";
 
 export default function Header() {
   const { user, logOut } = useAuth();
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      className="my-nav"
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+    >
       <Container>
         <Navbar.Brand href="#home">Medi Sheba</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

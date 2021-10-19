@@ -1,12 +1,13 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import img from "./img/about.jpg";
+import "./About.css";
 export default function About() {
   return (
-    <div>
+    <div className="about-us">
       <Container>
         <Row xs={1} md={3} lg={3} className="justify-content-evenly">
-          <Col>
+          <Col className="d-flex align-items-center justify-content-center">
             <div>
               <h2>About Us</h2>
               <p>
@@ -26,7 +27,7 @@ export default function About() {
           </Col>
         </Row>
       </Container>
-      <div>
+      <div className="w-75 m-auto my-3">
         <p>
           Its Our goal is to find safe suppliers that produce proved
           medications. We believe that everybody has a right for the in-time and
