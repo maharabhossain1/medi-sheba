@@ -9,7 +9,6 @@ import TeleMedicine from "../TeleMedicine/TeleMedicine";
 
 export default function Servicing() {
   const { serviceId } = useParams();
-  console.log(serviceId);
   return (
     <>
       {serviceId === "1" ? (

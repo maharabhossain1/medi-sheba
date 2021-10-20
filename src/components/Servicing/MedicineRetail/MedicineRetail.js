@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row, Button, Table } from "react-bootstrap";
+import {
+  FaAngleDoubleDown,
+  FaCartPlus,
+  FaHandHoldingMedical,
+} from "react-icons/fa";
 
 export default function MedicineRetail() {
   const [mediData, setmediData] = useState([]);
@@ -7,7 +12,7 @@ export default function MedicineRetail() {
   useEffect(() => {
     fetch("/datas.json")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setmediData(data));
   });
 
   return (
@@ -17,9 +22,15 @@ export default function MedicineRetail() {
       </div>
       <Container>
         <Row xs={1} md={1} lg={1} className="justify-content-evenly">
-          <Col className="d-flex align-items-center justify-content-center">
+          <Col>
             <div className=" m-auto">
-              <Table striped bordered hover size="sm">
+              <Table
+                striped
+                bordered
+                hover
+                size="sm"
+                className="w-100 text-center"
+              >
                 <thead>
                   <tr>
                     <th>*</th>
@@ -28,15 +39,41 @@ export default function MedicineRetail() {
                     <th>Add To Card</th>
                   </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                  {mediData.map((medi) => {
+                    const { id, name, price } = medi;
+                    return (
+                      <tr key={id}>
+                        <td>{id}</td>
+                        <td>{name}</td>
+                        <td>{price}</td>
+                        <td className="text-center">
+                          <Button className=" btn-custom-color">
+                            <FaCartPlus />
+                          </Button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
               </Table>
+              <div className="w-100 text-center">
+                <Button className=" btn-custom-color text-center w-50 my-3">
+                  Load More !<FaAngleDoubleDown className="mx-4" />
+                </Button>
+              </div>
             </div>
           </Col>
         </Row>
       </Container>
       <Button className="btn-custom-color text-center w-100 my-3">
-        If you want to purchase this Click Here
+        If you want to purchase this Click Here{" "}
+        <FaHandHoldingMedical className="mx-3" />
       </Button>
     </div>
   );
 }
+
+// FaAmbulance;
+// FaHandHoldingMedical;
+// FaCapsules;
