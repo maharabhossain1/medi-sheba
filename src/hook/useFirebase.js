@@ -76,9 +76,11 @@ const useFirebase = () => {
 
   const logOut = () => {
     setIsLogin(true);
-    signOut(auth).then(() => {
-      setUser({}).finally(() => setIsLoading(false));
-    });
+    signOut(auth)
+      .then(() => {
+        setUser({});
+      })
+      .finally(() => setIsLoading(false));
   };
 
   useEffect(() => {

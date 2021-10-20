@@ -1,5 +1,11 @@
 [
   {
+    "id": 1,
+    "img": "https://i.ibb.co/vY6SP3R/medicine.jpg",
+    "title": "Medicine Retail",
+    "mini_detail": "You can buy medicine"
+  },
+  {
     "id": 2,
     "img": "https://i.ibb.co/h7y221h/telemedicine-f.jpg",
     "title": "Telemedicine",
@@ -28,11 +34,5 @@
     "img": "https://i.ibb.co/Wxt3sGr/Online-Doctor-Consultation-Support-Promotion-Flat-Banner-Modern-Healthcare-Service-Medical-Technolog.jpg",
     "title": "Doctor Consultation",
     "mini_detail": "We Also provide this"
-  },
-  {
-    "id": 1,
-    "img": "https://i.ibb.co/vY6SP3R/medicine.jpg",
-    "title": "Medicine Retail",
-    "mini_detail": "You can buy medicine"
   }
 ]
