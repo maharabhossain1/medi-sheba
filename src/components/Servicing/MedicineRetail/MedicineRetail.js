@@ -1,13 +1,15 @@
-// import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Col, Container, Row, Button, Table } from "react-bootstrap";
 
 export default function MedicineRetail() {
-  // const [medicines, setMEdicines] = useState([]);
-  // useEffect(() => {
-  //   fetch("./mediData.json")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
+  const [mediData, setmediData] = useState([]);
+
+  useEffect(() => {
+    fetch("/datas.json")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  });
+
   return (
     <div className="w-75 m-auto">
       <div className="text-center m-4  ">
