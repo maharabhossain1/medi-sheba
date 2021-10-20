@@ -1,6 +1,6 @@
 import React from "react";
 import { FloatingLabel, Form, Button } from "react-bootstrap";
-import { useHistory, useLocation } from "react-router";
+// import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hook/useAuth";
 
 export default function Login() {

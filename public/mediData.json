@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "APCOCID TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 2,
+    "name": "APEDROX SUSPENSION",
+    "price": "20$"
+  },
+  {
+    "id": 3,
+    "name": "AVLOCID TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 4,
+    "name": "AVLOCID MS TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 5,
+    "name": "AVLOCID MS SUSPENSION",
+    "price": "20$"
+  },
+  {
+    "id": 6,
+    "name": "AVLOCID PLUS TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 7,
+    "name": "AVLOCID PLUS SUSPENSION",
+    "price": "20$"
+  },
+  {
+    "id": 8,
+    "name": "BIOCID TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 9,
+    "name": "BIOCID MH SUSPENSION",
+    "price": "20$"
+  },
+  {
+    "id": 10,
+    "name": "BIOCID PLUS TABLET",
+    "price": "20$"
+  },
+  {
+    "id": 11,
+    "name": "BIOCID PLUS SUSPENSION",
+    "price": "20$"
+  },
+  {
+    "id": 12,
+    "name": "CYTOCID SUSPENSION",
+    "price": "20$"
+  }
+]
