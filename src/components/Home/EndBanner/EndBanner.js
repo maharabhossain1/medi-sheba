@@ -12,7 +12,7 @@ export default function EndBanner() {
   ];
   return (
     <div>
-      <div className=" m-3 p-2 home-text ">
+      <div className=" m-5 p-2 home-text ">
         <h1>
           <FaUserFriends className="text-custom-color" /> Users Reviews
         </h1>
